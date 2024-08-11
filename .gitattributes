@@ -1,4 +1,1 @@
 *.largefileextension filter=lfs diff=lfs merge=lfs -text
-*.mp4 filter=lfs diff=lfs merge=lfs -text
-public/videos/blackhole.mp4 filter=lfs diff=lfs merge=lfs -text
-public/videos/c.mp4 filter=lfs diff=lfs merge=lfs -text
