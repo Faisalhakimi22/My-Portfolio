@@ -9,10 +9,11 @@ export const Hero = () => {
         loop
         className="rotate-180 absolute top-[-300px] left-0 w-full h-full object-cover -z-20"
       >
-        <source src="/videos/a.mp4" type="video/mp4" />
+        <source src="/videos/b.mp4" type="video/mp4" />
       </video>
 
       <HeroContent />
     </div>
   );
+
 };
