@@ -1,7 +1,4 @@
-
 "use client";
-
-
 
 import Image from "next/image";
 import Link from "next/link";
@@ -10,8 +7,9 @@ import { LINKS, NAV_LINKS, SOCIALS } from "@/constants";
 
 export const Navbar = () => {
   return (
-    <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50  backdrop-blur-md z-50 px-10">
-      <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
+    <div className="w-full h-[65px] fixed top-0 left-0 shadow-lg shadow-[#2A0E61]/50 backdrop-blur-md z-50 px-4 md:px-10">
+      <div className="w-full h-full flex flex-row items-center justify-between">
+        {/* Logo and Name */}
         <Link
           href="#about-me"
           className="h-auto w-auto flex flex-row items-center"
@@ -29,7 +27,8 @@ export const Navbar = () => {
           </div>
         </Link>
 
-        <div className="w-[500px] h-full flex flex-row items-center justify-between md:mr-20">
+        {/* Navigation Links */}
+        <div className="hidden md:flex flex-row items-center justify-between w-[500px] h-full">
           <div className="flex items-center justify-between w-full h-auto border-[rgba(112,66,248,0.38)] bg-[rgba(3,0,20,0.37)] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
             {NAV_LINKS.map((link) => (
               <Link
@@ -41,7 +40,7 @@ export const Navbar = () => {
               </Link>
             ))}
 
-            {/* source code */}
+            {/* Source Code */}
             <Link
               href={LINKS.sourceCode}
               target="_blank"
@@ -53,7 +52,8 @@ export const Navbar = () => {
           </div>
         </div>
 
-        <div className="flex flex-row gap-5">
+        {/* Social Icons */}
+        <div className="flex flex-row gap-5 items-center">
           {SOCIALS.map(({ link, name, icon: Icon }) => (
             <Link
               href={link}
@@ -67,5 +67,5 @@ export const Navbar = () => {
         </div>
       </div>
     </div>
-  )
+  );
 };

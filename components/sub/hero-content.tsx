@@ -75,8 +75,8 @@ export const HeroContent = () => {
           target="_blank"
           rel="noopener noreferrer"
           variants={slideInFromLeft(1)}
-          className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px] mx-auto sm:mx-0"
-        >
+          className="py-1 px-4 text-base button-primary text-center text-white cursor-pointer rounded-lg max-w-[150px] mx-auto sm:mx-0"
+          >
           View Resume
         </motion.a>
       </div>
