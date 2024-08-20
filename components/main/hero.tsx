@@ -1,13 +1,15 @@
+"use client";
+
 import { HeroContent } from "@/components/sub/hero-content";
 
 export const Hero = () => {
   return (
-    <div className="relative flex flex-col h-full w-full">
+    <div className="relative flex flex-col h-screen w-full overflow-hidden">
       <video
         autoPlay
         muted
         loop
-        className="rotate-180 absolute top-[-300px] left-0 w-full h-full object-cover -z-20"
+        className="absolute inset-0 w-full h-full object-cover -z-10"
       >
         <source src="/videos/p.mp4" type="video/mp4" />
       </video>
