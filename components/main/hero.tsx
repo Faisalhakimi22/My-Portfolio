@@ -6,7 +6,7 @@ export const Hero = () => {
       <img
         src="videos/p.jpg" // Use forward slashes for paths
         alt="Hero Background"
-        className="absolute inset-0 object-cover w-full h-[60vh] md:h-full -z-20" // 60vh for mobile, full height for larger screens
+        className="absolute inset-0 w-full h-full -z-20 mt-[-10%] object-contain md:mt-0 md:object-cover md:h-[60vh]" // Responsive styles applied
       />
       
       <HeroContent />
