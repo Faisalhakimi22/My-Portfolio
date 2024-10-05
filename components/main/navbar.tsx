@@ -41,6 +41,7 @@ export const Navbar = () => {
             ))}
 
             {/* Source Code */}
+            {/*
             <Link
               href={LINKS.sourceCode}
               target="_blank"
@@ -49,6 +50,7 @@ export const Navbar = () => {
             >
               Source Code
             </Link>
+            */}
           </div>
         </div>
 

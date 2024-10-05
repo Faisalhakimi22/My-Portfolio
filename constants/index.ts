@@ -257,7 +257,7 @@ export const PROJECTS = [
     description:
       'Embark on a journey through my professional evolution with the "Modern Next.js Portfolio" - a dynamic showcase of my skills, experiences, and passion for web development. Crafted with precision and powered by Next.js, this portfolio is more than just a static display; it\'s an immersive experience that reflects the cutting edge of modern web technologies.',
     image: "/projects/project-1.png",
-    link: "https://example.com",
+    link: "https://github.com/Faisalhakimi22/wasteVision",
   },
   {
     title: "Interactive Cards Portfolio",
@@ -351,8 +351,14 @@ export const NAV_LINKS = [
     title: "Projects",
     link: "#projects",
   },
+  {
+    title: "Contact me",
+    link: "#contact-me",
+  },
 ] as const;
 
+/*
 export const LINKS = {
   sourceCode: "https://github.com/sanidhyy/space-portfolio",
 };
+*/
